@@ -5,7 +5,7 @@ module Nerdier
 
     attr_accessor :url, :api, :timeout
 
-    def initialize(api = ENV['NERD_API'], url = 'http://nerd.eurecom.fr', timeout = 30)
+    def initialize(api = ENV['NERD_API'], url = 'http://nerd.eurecom.fr', timeout = 1200)
       @client = Client.http_client
       @url = url
       @timeout = timeout
